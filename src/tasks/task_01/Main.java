@@ -17,7 +17,6 @@ public class Main {
     private static double getData() {
         try {
             System.out.print(DEFAULT_ENTER);
-            // Лучше использовать scanner.nextDouble(), однако в таком случае получить NumberFormatException невозможно
             return Double.parseDouble(scanner.nextLine());
         } catch (NumberFormatException e) {
             System.out.println(INVALID_INPUT);
